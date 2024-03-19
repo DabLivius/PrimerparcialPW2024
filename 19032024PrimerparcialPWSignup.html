@@ -23,7 +23,9 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Noticias</a>
+        <a class="navbar-brand" href="19032024PrimerparcialPWIndex.html"
+          >Noticias</a
+        >
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -36,7 +38,10 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#" aria-current="page"
+              <a
+                class="nav-link active"
+                href="19032024PrimerparcialPWAdmin.html"
+                aria-current="page"
                 >Admin <span class="visually-hidden">(current)</span></a
               >
             </li>
@@ -73,7 +78,69 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <form>
+        <div class="form-group">
+          <label for="Nombres">Nombres</label>
+          <input
+            type="text"
+            class="form-control"
+            name="Nombres"
+            id="Nombres"
+            aria-describedby="helpId"
+            placeholder="Nombres"
+          />
+          <small id="helpId" class="form-text text-muted"
+            >Ingresa tu nombre</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="Apellidos">Apellidos</label>
+          <input
+            type="text"
+            class="form-control"
+            name="Apellidos"
+            id="Apellidos"
+            aria-describedby="helpId"
+            placeholder="Apellidos"
+          />
+          <small id="helpId" class="form-text text-muted"
+            >Ingresa tu apellido</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            aria-describedby="emailHelpId"
+            placeholder="Email"
+          />
+          <small id="emailHelpId" class="form-text text-muted"
+            >Ingresa tu email</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="Telefono">Telefono</label>
+          <input
+            type="Telefono"
+            class="form-control"
+            name="Telefono"
+            id="Telefono"
+            aria-describedby="passwordHelpId"
+            placeholder="Telefono"
+          />
+          <small id="passwordHelpId" class="form-text text-muted"
+            >Ingresa tu Telefono</small
+          >
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+        <button type="submit" class="btn btn-primary">Cancelar</button>
+      </form>
+    </main>
     <footer>
       <!-- place footer here -->
     </footer>
