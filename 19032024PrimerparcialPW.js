@@ -6,40 +6,36 @@ function login() {
 }
 
 function validaciones() {
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-  var name = document.getElementById("name").value;
-  var lastName = document.getElementById("lastName").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  var nameRegex = /^[A-Za-z]{1,10}$/;
+    var Nombres = document.getElementById("Nombres").value;
+    var Apellidos = document.getElementById("Apellidos").value;
+    var Telefono = document.getElementById("Telefono").value;
+    var Email = document.getElementById("Email").value;
+    var nameRegex = /^[A-Z-a-z]{1,30}$/;
 
-  if (!nameRegex.test(name)) {
-    alert("Invalid name. Only letters allowed, maximum 10 characters.");
-    return;
-  }
+    if (!nameRegex.test(Nombres)) {
+        alert("Nombres invalidos. Solo letras minusculas por favor, Maximo 30 letras.");
+        return;
+    }
 
-  if (!nameRegex.test(lastName)) {
-    alert("Invalid last name. Only letters allowed, maximum 10 characters.");
-    return;
-  }
+    if (!nameRegex.test(Apellidos)) {
+        alert("Apellidos invalidos. Solo letras mnusculas por favor, Maximo 30 letras.");
+        return;
+    }
 
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    alert("Invalid email address.");
-    return;
-  }
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(Email)) {
+        alert("Email invalido.");
+        return;
+    }
 
-  var phoneRegex = /^\d{1,10}$/;
-  if (!phoneRegex.test(phone)) {
-    alert("Invalid phone number. Only numbers allowed, maximum 10 digits.");
-    return;
-  }
+    var phoneRegex = /^\d{1,10}$/;
+    if (!phoneRegex.test(Telefono)) {
+        alert("Telefono invalido. Solo se permiten numeros, maximo 10 digitos.");
+        return;
+    }
 
-  console.log("Username: " + username);
-  console.log("Password: " + password);
-  console.log("Name: " + name);
-  console.log("Last Name: " + lastName);
-  console.log("Email: " + email);
-  console.log("Phone: " + phone);
+    alert("Nombres: " + Nombres + "Es valido.");
+    alert("Apellidos: " + Apellidos + "Es valido.");
+    alert("Email: " + Email + "Es valido.");
+    alert("Telefono: " + Telefono + "Es valido.");
 }
